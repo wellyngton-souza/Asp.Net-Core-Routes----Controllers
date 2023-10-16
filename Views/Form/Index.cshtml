@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Minha Página Razor</title>
+</head>
+<body>
+    <main class="min-h-screen flex items-center justify-center bg-purple-100">
+        <form class="p-8 bg-white" method="post" asp-controller="Form" asp-action="ProcessForm">
+            <h2>Formulario C#</h2>
+            <p>Valor 1</p>
+            <input class="px-2 border border-black" type="text" placeholder="Insira Numeros Aqui" name="nome1" />
+            <p>Valor 2</p>
+            <input class="px-2 border border-black" type="text" placeholder="Insira Numeros Aqui" name="nome2" />
+            <p><input class="px-2 border border-black" type="submit" value="Enviar" /></p>
+        </form>
+    </main>
+</body>
+</html>

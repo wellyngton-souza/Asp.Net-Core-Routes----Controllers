@@ -1,0 +1,21 @@
+@model MeuModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Minha Página Razor</title>
+</head>
+<body>
+    <main class="min-h-screen flex items-center justify-center bg-purple-100">
+        <div class="p-4 bg-white">
+            <h1>ProcessForm Page</h1>
+            <p>Valor1: @Model.Nome1</p>
+            <p>Valor2: @Model.Nome2</p>
+            <p>Resultado: @(@Model.Nome1 + @Model.Nome2)</p>
+        </div>
+    </main>
+</body>
+</html>
