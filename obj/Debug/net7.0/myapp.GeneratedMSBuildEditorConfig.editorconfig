@@ -9,21 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = myapp
 build_property.RootNamespace = myapp
-build_property.ProjectDir = C:\Users\wellyngton\Downloads\App\
+build_property.ProjectDir = C:\Users\wellyngton\Downloads\Routes-and-Controllers\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\wellyngton\Downloads\App
+build_property.MSBuildProjectDirectory = C:\Users\wellyngton\Downloads\Routes-and-Controllers
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/wellyngton/Downloads/App/Views/Form/Index.cshtml]
+[C:/Users/wellyngton/Downloads/Routes-and-Controllers/Views/Form/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wellyngton/Downloads/App/Views/Form/ProcessForm.cshtml]
+[C:/Users/wellyngton/Downloads/Routes-and-Controllers/Views/Form/ProcessForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxQcm9jZXNzRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wellyngton/Downloads/App/Views/Home/Index.cshtml]
+[C:/Users/wellyngton/Downloads/Routes-and-Controllers/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wellyngton/Downloads/Routes-and-Controllers/Views/Todo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
