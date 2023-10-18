@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj": {}
+    "c:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj": {
+    "c:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj",
+        "projectUniqueName": "c:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj",
         "projectName": "myapp",
-        "projectPath": "C:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj",
+        "projectPath": "c:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\myapp.csproj",
         "packagesPath": "C:\\Users\\wellyngton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\obj\\",
+        "outputPath": "c:\\Users\\wellyngton\\Downloads\\Routes-and-Controllers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\wellyngton\\AppData\\Roaming\\NuGet\\NuGet.Config",

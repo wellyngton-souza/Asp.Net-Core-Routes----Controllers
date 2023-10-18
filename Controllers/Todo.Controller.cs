@@ -1,48 +1,48 @@
-using Microsoft.AspNetCore.Mvc;
-
-/*
-using System.Threading.Tasks;
-using System.Text.Json;
 using System.Net.Http;
-*/
+using System.Net.Http.Json;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 [Route("todo")]
 public class TodoController : Controller
 {
-    /*
-    private readonly HttpClient _httpClient;
+     private readonly IHttpClientFactory _clientFactory;
 
-    public TodoController(IHttpClientFactory httpClientFactory){
-        _httpClient = httpClientFactory.CreateClient();
+    public TodoController(IHttpClientFactory clientFactory)
+    {
+        _clientFactory = clientFactory;
     }
-    */
+
     [HttpGet]
-    public IActionResult Index()
-    {   
-        /*
-        string url = "https://pokeapi.co/api/v2/pokemon/pikachu";
+    public async Task<IActionResult> Index()
+    {
+        // Criar um cliente HTTP usando a factory
+        var client = _clientFactory.CreateClient();
 
-        try
+        // Fazer uma solicitação GET à API do Pokémon
+        var response = await client.GetAsync("https://pokeapi.co/api/v2/pokemon/1");
+
+        if (response.IsSuccessStatusCode)
         {
-            var response = await _httpClient.GetAsync(url);
+            // Ler e desserializar o conteúdo JSON retornado
+            var pokemon = await response.Content.ReadFromJsonAsync<Pokemon>();
 
-            if (response.IsSuccessStatusCode)
-            {
-                // var pokemonData = await response.Content.ReadAsAsync<PokemonData>();
-                return View("Home");
-            }
-            else
-            {
-                ViewBag.ErrorMessage = "O Pokémon Pikachu não foi encontrado.";
-                return View();
-            }
+            // Você pode criar uma classe Pokemon para desserializar os dados
+            // Exemplo de classe Pokemon:
+            // public class Pokemon
+            // {
+            //     public string Name { get; set; }
+            //     public int Height { get; set; }
+            //     public int Weight { get; set; }
+            //     // Outras propriedades do Pokémon
+            // }
+
+            return View(pokemon);
         }
-        catch (HttpRequestException)
+        else
         {
-            ViewBag.ErrorMessage = "Ocorreu um erro ao buscar os dados do Pokémon Pikachu.";
             return View();
+        //return RedirectToAction("Index", "Home"); // Redireciona para outro Index que esteja Fora da sua View
         }
-        */
-        return RedirectToAction("Index", "Home"); // Redireciona para outro Index que esteja Fora da sua View
     }
 }
